@@ -3,7 +3,9 @@
 46 张 TOGAF 10 架构图的可导航、可缩放、带学习进度的**个人学习站**。纯静态、零后端、
 零第三方运行时依赖，手机端可用。
 
-![46 张 TOGAF 10 架构图](https://img.shields.io/badge/diagrams-46-3f5bd9) ![9 分类](https://img.shields.io/badge/categories-9-3f5bd9) ![MIT](https://img.shields.io/badge/diagrams-MIT-green) ![site-MIT-green)
+**线上地址：<https://togaf-diagrams.pages.dev>**
+
+![46 张 TOGAF 10 架构图](https://img.shields.io/badge/diagrams-46-3f5bd9) ![9 分类](https://img.shields.io/badge/categories-9-3f5bd9) ![MIT](https://img.shields.io/badge/diagrams-MIT-green) ![Cloudflare Pages](https://img.shields.io/badge/hosting-Cloudflare_Pages-orange)
 
 ## 功能
 
@@ -27,6 +29,8 @@
 | AVIF 全尺寸 | 4.3 MB | 95 KB |
 | WebP 全尺寸 | 7.4 MB | 165 KB |
 | 缩略图（480px 内） | 1.1 MB | 24 KB |
+
+线上实测（Cloudflare 边缘 brotli 压缩后）：**首屏 146 KB**，全尺寸图 AVIF 95 KB / WebP 165 KB。
 
 - **首屏传输约 217 KB**（HTML + CSS + JS + 清单 + 首屏缩略图）
 - 网格只加载缩略图；全尺寸图仅在打开详情时按需加载
@@ -75,13 +79,34 @@ npm run dev          # http://localhost:4321
 
 ## 部署到 Cloudflare Pages
 
+线上项目：**`togaf-diagrams`**（Cloudflare Pages，VLTA AI 主账号）→ `togaf-diagrams.pages.dev`
+
+### 方式一：wrangler（本地）
+
 ```bash
-npx wrangler login                                   # 一次（浏览器授权）
-npx wrangler pages project create togaf-diagrams     # 只需一次
-npm run deploy                                       # 每次发布
+npx wrangler pages deploy public --project-name togaf-diagrams --branch main
 ```
 
-或直接在 Cloudflare 控制台连接本仓库：
+需要本机已通过 `wrangler login` 或 `CLOUDFLARE_API_TOKEN` 授权。
+
+> 首次创建项目时用 `--force` 走经典 Pages API（wrangler 4.156+ 默认把 `pages` 委托给新的
+> Workers 版实现，需要额外的静态目录探测）。项目已存在后**不要**再加 `--force`。
+
+### 方式二：Agent MCP Gateway（无需本地 OAuth）
+
+通过 `agent-mcp-gateway` 的 Cloudflare MCP 租户 `cloudflare-vltaai`
+（VLTA AI org，account `d7c6beee…`）操作，无需在开发机安装 wrangler 凭据：
+
+```bash
+# 令牌从 hub 上的 mcp-hub/.env 注入到环境变量（不落盘、不打印）
+export CLOUDFLARE_API_TOKEN="$(ssh ubuntu@<hub> "grep CLOUDFLARE_API_TOKEN ~/mcp-hub/.env | cut -d= -f2-")"
+export CLOUDFLARE_ACCOUNT_ID=d7c6beee205961b2ba71102db74032d3
+npx wrangler pages deploy public --project-name togaf-diagrams --branch main
+```
+
+### 方式三：Git 集成自动部署
+
+在 Cloudflare 控制台连接本仓库：
 
 - **构建命令**：`npm run build:site`
 - **输出目录**：`public`
