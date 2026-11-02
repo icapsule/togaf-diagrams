@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TOGAF 图谱学习站</title>
+<meta name="description" content="46 张 TOGAF 10 架构图：可搜索、可缩放、带学习进度。ADM 生命周期、治理与合规、能力规划、利益相关者、风险与安全。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-row">
+    <a class="brand" href="#/" aria-label="TOGAF 图谱学习站首页">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="16" cy="16" r="4.5" fill="currentColor"/>
+        <circle cx="16" cy="4.5" r="2.4" fill="currentColor"/>
+        <circle cx="26" cy="21" r="2.4" fill="currentColor"/>
+        <circle cx="6" cy="21" r="2.4" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">TOGAF 图谱</span>
+    </a>
+
+    <form class="search" role="search" autocomplete="off">
+      <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <line x1="12.8" y1="12.8" x2="17" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <input id="search" type="search" placeholder="搜索图名、术语、关键词…"
+             aria-label="搜索图谱" enterkeyhint="search" spellcheck="false">
+      <button type="button" id="searchClear" class="search-clear" aria-label="清空搜索" hidden>✕</button>
+    </form>
+
+    <nav class="topnav" aria-label="主导航">
+      <a href="#/gallery" class="navlink" data-nav="gallery">全部图谱</a>
+      <a href="#/about" class="navlink" data-nav="about">关于</a>
+    </nav>
+
+    <a href="#/gallery" class="progress-chip" id="progressChip" title="学习进度">
+      <span class="progress-ring" id="progressRing"></span>
+      <span class="progress-text" id="progressText">0/46</span>
+    </a>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="sitefoot">
+  <p>
+    图谱来自 <a href="https://github.com/JawharMobile/togaf-diagrams" rel="noopener">nelsambrase/togaf-diagrams</a>
+    （MIT 协议，作者 Nels Ambrose），经固定 commit 快照重建。
+    本站为个人学习用途，与 The Open Group 无关；TOGAF 是 The Open Group 的注册商标。
+  </p>
+</footer>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>

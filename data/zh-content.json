@@ -1,0 +1,186 @@
+{
+  "adm-cycle": {
+    "zhTitle": "TOGAF ADM 循环",
+    "zhDesc": "ADM 迭代循环全貌：从 Preliminary 到 Phase H 环绕中央持续运行的 Requirements Management 过程。"
+  },
+  "adm-end-to-end-architecture": {
+    "zhTitle": "ADM 端到端参考图",
+    "zhDesc": "横向泳道图，串联全部 ADM 阶段，标明每个阶段的输入、产出与跨阶段依赖关系。"
+  },
+  "application-architecture": {
+    "zhTitle": "应用架构",
+    "zhDesc": "企业应用与服务的结构、交互、集成、治理与全生命周期管理。"
+  },
+  "architecture-artifacts": {
+    "zhTitle": "架构制品",
+    "zhDesc": "ADM 全周期中用于记录和治理企业架构的目录、矩阵与图形制品。"
+  },
+  "architecture-building-blocks": {
+    "zhTitle": "架构构件 (ABB)",
+    "zhDesc": "可复用的逻辑能力、标准与服务，为后续解决方案构件提供实现指引。"
+  },
+  "phase-a-architecture-building-blocks-vs-solution-building-blocks": {
+    "zhTitle": "架构构件 vs 解决方案构件",
+    "zhDesc": "并排对比厂商中立的抽象架构构件，与面向具体产品的解决方案构件。"
+  },
+  "architecture-capability": {
+    "zhTitle": "架构能力",
+    "zhDesc": "企业架构所需的治理结构、人员、流程、工具与成熟度实践。"
+  },
+  "phase-h-architecture-change-management": {
+    "zhTitle": "架构变更管理 (Phase H)",
+    "zhDesc": "变更评估、治理决策、架构演进，以及何时重新启动 ADM 循环。"
+  },
+  "architecture-change-requests": {
+    "zhTitle": "架构变更请求",
+    "zhDesc": "架构变更如何被发现、评估、治理、批准并落地实施。"
+  },
+  "architecture-communication": {
+    "zhTitle": "架构沟通",
+    "zhDesc": "通过架构信息与治理信息的传达实现干系人对齐，支撑企业转型。"
+  },
+  "architecture-compliance-reviews": {
+    "zhTitle": "架构合规评审",
+    "zhDesc": "依据架构原则、标准、治理要求与风险，对方案进行合规评估。"
+  },
+  "phase-c-architecture-content-framework": {
+    "zhTitle": "架构内容框架",
+    "zhDesc": "将交付物按元模型类别、制品与构件层层组织起来的层次化框架。"
+  },
+  "architecture-contracts": {
+    "zhTitle": "架构契约",
+    "zhDesc": "关于治理协议、合规义务、责任划分与实施问责的正式约定。"
+  },
+  "architecture-decisions-traceability": {
+    "zhTitle": "架构决策与可追溯性",
+    "zhDesc": "如何在各转型项目之间管理架构决策、治理批准、决策依据与依赖关系。"
+  },
+  "architecture-deliverables": {
+    "zhTitle": "架构交付物",
+    "zhDesc": "ADM 的正式交付物：架构定义、治理制品、过渡计划与合规产出。"
+  },
+  "phase-a-architecture-governance-model": {
+    "zhTitle": "架构治理模型",
+    "zhDesc": "分层治理结构：监督机构、合规评审委员会与问责流向。"
+  },
+  "architecture-landscape": {
+    "zhTitle": "架构景观",
+    "zhDesc": "企业架构资产在战略、领域与能力三个层次上的组织方式。"
+  },
+  "architecture-metamodel": {
+    "zhTitle": "架构元模型",
+    "zhDesc": "业务、数据、应用、技术元素之间的结构关系，保证一致性与可追溯性。"
+  },
+  "architecture-partitioning": {
+    "zhTitle": "架构分区",
+    "zhDesc": "如何按战略、领域、方案层次切分企业架构，兼顾治理与可扩展性。"
+  },
+  "architecture-principles": {
+    "zhTitle": "架构原则",
+    "zhDesc": "业务、数据、应用、技术与治理原则，用于指导企业架构决策。"
+  },
+  "architecture-repository": {
+    "zhTitle": "架构库",
+    "zhDesc": "治理资产、标准、可复用的架构知识与能力结构。"
+  },
+  "architecture-views-viewpoints": {
+    "zhTitle": "视图与视点",
+    "zhDesc": "干系人关注点如何映射到架构视点、视图、治理沟通与转型对齐。"
+  },
+  "architecture-vision": {
+    "zhTitle": "架构愿景 (Phase A)",
+    "zhDesc": "高层级的目标架构愿景、干系人对齐与转型目标。"
+  },
+  "business-architecture": {
+    "zhTitle": "业务架构",
+    "zhDesc": "支撑企业战略的现状与目标业务能力、价值流、组织结构与流程。"
+  },
+  "business-scenarios": {
+    "zhTitle": "业务场景 (企业视图)",
+    "zhDesc": "业务问题、干系人交互与解决方案需求如何支撑企业架构建设。"
+  },
+  "phase-a-business-scenarios": {
+    "zhTitle": "业务场景 (Phase A 视图)",
+    "zhDesc": "如何把业务驱动因素与问题结构化为场景，以支撑架构愿景。"
+  },
+  "phase-b-capability-assessment-maturity-models": {
+    "zhTitle": "能力评估与成熟度模型",
+    "zhDesc": "网格化成熟度模型，从初始到优化分级评估企业架构能力。"
+  },
+  "capability-based-planning": {
+    "zhTitle": "基于能力的规划",
+    "zhDesc": "识别、评估、排序并规划企业能力，支撑战略转型。"
+  },
+  "compliance-assessment": {
+    "zhTitle": "合规评估",
+    "zhDesc": "治理验证、标准对齐与交付监督，支撑受控的企业转型。"
+  },
+  "data-architecture": {
+    "zhTitle": "数据架构",
+    "zhDesc": "企业数据资产的结构、治理、生命周期、集成与管理。"
+  },
+  "enterprise-continuum": {
+    "zhTitle": "企业连续域",
+    "zhDesc": "架构资产从通用基础架构逐步演进到组织专属方案的分类谱系。"
+  },
+  "phase-a-enterprise-continuum-architecture-repository": {
+    "zhTitle": "企业连续域与架构库",
+    "zhDesc": "在谱系上定位架构资产：从通用基础架构一直延伸到组织专属方案。"
+  },
+  "governance-log": {
+    "zhTitle": "治理日志",
+    "zhDesc": "架构决策、合规活动、风险管理、审计追溯与治理持续演进的记录。"
+  },
+  "governance-repository": {
+    "zhTitle": "治理库",
+    "zhDesc": "集中存放架构决策、合规记录、政策、审计证据与治理结论。"
+  },
+  "phase-g-implementation-governance": {
+    "zhTitle": "实施治理 (Phase G)",
+    "zhDesc": "目标架构落地过程中的架构合规、治理监督与实施支持。"
+  },
+  "phase-f-migration-planning": {
+    "zhTitle": "迁移规划 (Phase F)",
+    "zhDesc": "实施排序、迁移计划、依赖管理与治理对齐。"
+  },
+  "phase-e-opportunities-solutions": {
+    "zhTitle": "机会与解决方案 (Phase E)",
+    "zhDesc": "差距分析、候选方案、工作包、过渡架构与路线图规划。"
+  },
+  "reference-architectures": {
+    "zhTitle": "参考架构",
+    "zhDesc": "可复用的架构模型、标准、模式，以及面向交付的实施指引。"
+  },
+  "requirements-management": {
+    "zhTitle": "需求管理",
+    "zhDesc": "贯穿全部 ADM 阶段，持续捕获、验证、排序并治理架构需求的过程。"
+  },
+  "risk-management": {
+    "zhTitle": "风险管理",
+    "zhDesc": "架构风险如何在 ADM 各环节被识别、评估、缓解与持续监控。"
+  },
+  "security-architecture-integration": {
+    "zhTitle": "安全架构集成",
+    "zhDesc": "安全控制、治理、合规、韧性与风险管理如何嵌入各架构域。"
+  },
+  "solution-building-blocks": {
+    "zhTitle": "解决方案构件 (SBB)",
+    "zhDesc": "把架构构件意图落地的、面向具体产品的可部署组件。"
+  },
+  "stakeholder-management": {
+    "zhTitle": "干系人管理",
+    "zhDesc": "识别、分析、参与并治理干系人，支撑架构对齐的结构化方法。"
+  },
+  "phase-a-stakeholder-map-views-concerns": {
+    "zhTitle": "干系人地图与关注点",
+    "zhDesc": "以矩阵方式把干系人角色映射到其关注的架构视图与核心关切。"
+  },
+  "standards-information-base": {
+    "zhTitle": "标准信息库",
+    "zhDesc": "已批准的企业标准、技术政策、安全控制与合规要求。"
+  },
+  "phase-d-technology-architecture": {
+    "zhTitle": "技术架构 (Phase D)",
+    "zhDesc": "基础设施、平台服务、集成、安全与运维韧性等层次。"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "togaf-diagrams-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TOGAF 10 图谱学习站 — 46 张 TOGAF 架构图的可导航、可缩放、带学习进度的静态站点",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-source.mjs",
+    "extract": "node scripts/extract-metadata.mjs",
+    "build:images": "node scripts/build-images.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "build": "npm run build:images && npm run build:site",
+    "validate": "node scripts/validate.mjs",
+    "dev": "node scripts/serve.mjs",
+    "deploy": "npm run build:site && wrangler pages deploy public --project-name togaf-diagrams --branch main"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
